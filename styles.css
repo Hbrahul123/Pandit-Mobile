@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+}
+
+header {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+.shop-name {
+    font-size: 2.5rem;
+    color: #00ff99;
+    letter-spacing: 2px;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust for more products */
+    grid-gap: 20px;
+}
+
+.category-card {
+    position: relative;
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.category-card h3 {
+    position: absolute;
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+}
+
+.smartphone .overlay,
+.headset .overlay,
+.smartwatches .overlay,
+.home-speakers .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.smartphone p {
+    background-color: #00f;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.smartphone button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #0066ff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Shop Services Section */
+.shop-services {
+    background-color: #1a1a1a;
+    padding: 50px 0;
+    color: #fff;
+    margin-top: 40px;
+    border-top: 2px solid #333;
+}
+
+.services-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.service-card {
+    background-color: #222;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #00ff99;
+}
+
+.service-card p {
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Bottom Details Section */
+.details-container {
+    width: 80%;
+    margin: 40px auto;
+    text-align: left;
+    color: #ccc;
+}
+
+.details-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.detail-card {
+    margin-bottom: 20px;
+}
+
+.detail-card h3 {
+    font-size: 1.5rem;
+    color
+/* Styles for the shop owner photo */
+.shop-owner {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.shop-owner h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.shop-owner .owner-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 48px solid #ddd;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.shop-owner p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #555;
+}
